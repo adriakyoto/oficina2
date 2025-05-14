@@ -1,0 +1,137 @@
+/* Estilos gerais */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: aquamarine;
+}
+
+header {
+    background-color: aquamarine;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #154b7c;
+    margin: 0;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+nav a:hover, nav a.ativo {
+    background-color: aquamarine;
+    border-radius: 5px;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+section {
+    margin-bottom: 30px;
+    background-color: aquamarine;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #1e6fba;
+    border-bottom: 2px solid #1e6fba;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: aquamarine;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 0;
+}
+
+.mapa {
+    margin-bottom: 20px;
+}
+
+/* Estilos específicos para páginas */
+.destaque img {
+    max-height: 400px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.historia p, .religiao p, .economia p {
+    text-align: justify;
+}
+
+.esporte-item, .atividade {
+    background-color: aquamarine;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border-left: 4px solid #1e6fba;
+}
+
+.curiosidades ul {
+    columns: 2;
+    list-style-type: none;
+    padding: 0;
+}
+
+.curiosidades li {
+    padding: 8px 0;
+    border-bottom: 1px dotted #ddd;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    
+    nav li {
+        margin: 5px 0;
+    }
+    
+    .curiosidades ul {
+        columns: 1;
+    }
+}
